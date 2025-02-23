@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace _6._1
 {
-    class MoblibePhone // prototype/ custom data type
+    class MoblibePhone // class
     {
         // properties of the class /object
         public string brand { get; set; }
@@ -22,7 +22,7 @@ namespace _6._1
             this.storage = storage;
             this.price = price;
         }
-
+        // Display Info
         public virtual void DisplayInfo()
         {
             Console.WriteLine($" {brand} -- {model} -- {storage} -- {price} ");
@@ -34,6 +34,7 @@ namespace _6._1
     {
         static void Main(string[] args)
         {
+            //MoblibePhone Info
             MoblibePhone mobliephone = new MoblibePhone("Apple", "iPhone 10", 280, 1000);
             mobliephone.DisplayInfo();
 
