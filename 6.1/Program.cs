@@ -7,23 +7,22 @@ using System.Xml.Linq;
 
 namespace _6._1
 {
-    class MoblibePhone // class
+    class MobilePhone// the class for the Mobile phone
     {
-        // properties of the class /object
+        //These are the properties for each object
         public string brand { get; set; }
         public string model { get; set; }
         public int storage { get; set; }
         public int price { get; set; }
 
-        public MoblibePhone(string brand, string model, int storage, int price)
+        public MobilbePhone(string brand, string model, int storage, int price) // identify each object for the Mobile phone
         {
             this.brand = brand;
             this.model = model;
             this.storage = storage;
             this.price = price;
         }
-        // Display Info
-        public virtual void DisplayInfo()
+        public virtual void DisplayInfo() // The display the phone information
         {
             Console.WriteLine($" {brand} -- {model} -- {storage} -- {price} ");
 
@@ -34,12 +33,12 @@ namespace _6._1
     {
         static void Main(string[] args)
         {
-            //MoblibePhone Info
-            MoblibePhone mobliephone = new MoblibePhone("Apple", "iPhone 10", 280, 1000);
-            mobliephone.DisplayInfo();
+            // The first mobile phone display
+            MobilePhone mobilephone = new MobilePhone ("Apple", "iPhone 10", 280, 1000);
+            mobilephone.DisplayInfo();
 
-
-            MoblibePhone mobilephone2 = new MoblibePhone("Samsung", "Fold3", 450, 899);
+            // The second mobile phone display
+            MobilbePhone mobilephone2 = new MoblibePhone("Samsung", "Fold3", 450, 899);
             mobilephone2.DisplayInfo();
 
 
